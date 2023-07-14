@@ -8,8 +8,12 @@ lvim.plugins = {
   { "ChristianChiarulli/swenv.nvim" },
   { "stevearc/dressing.nvim" },
   { "mfussenegger/nvim-dap-python" },
+
   { "nvim-neotest/neotest" },
+  { "nvim-neotest/neotest-go" },
+  { "nvim-neotest/neotest-plenary" },
   { "nvim-neotest/neotest-python" },
+
   { "simrat39/rust-tools.nvim" },
   {
     "saecki/crates.nvim",
@@ -26,6 +30,22 @@ lvim.plugins = {
         },
       }
     end,
+  },
+
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- add any options here
+    },
+    dependencies = {
+    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    }
   },
 
   { "lunarvim/lunar.nvim" },
