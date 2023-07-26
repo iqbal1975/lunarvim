@@ -1,9 +1,9 @@
 -- vim options
 local options = {
-	colorcolumn = "80",
+	colorcolumn = "90",
 	completeopt = { "menuone", "noinsert", "noselect" },
 	linebreak = true,
-  listchars = {
+	listchars = {
 		-- list of hidden characters
 		tab = "» ",
 		trail = "•",
@@ -13,15 +13,15 @@ local options = {
 		space = "␣",
 	},
 	nrformats = { "alpha", "octal", "hex" },
-  sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions",
+	sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions",
 	shell = "/bin/zsh",
-  showbreak = "↪",
+	showbreak = "↪",
 	splitbelow = true,
 	splitright = true,
 	shiftwidth = 2,
 	tabstop = 2,
 	relativenumber = true,
-  wrap = false,
+	wrap = false,
 	-- winbar = "%=%m %f"
 }
 
@@ -60,18 +60,18 @@ lvim.builtin.treesitter.ensure_installed = {
 	"c",
 	"cpp",
 	"css",
-  "go",
-  "gomod",
+	"go",
+	"gomod",
 	"java",
 	"javascript",
 	"json",
-  "latex",
+	"latex",
 	"lua",
 	"markdown_inline",
 	"python",
 	"regex",
 	"rust",
-  "toml",
+	"toml",
 	"tsx",
 	"typescript",
 	"yaml",
